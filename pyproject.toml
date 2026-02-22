@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "secure_ota_firmware_rollout_manager"
+version = "0.1.0"
+description = "Manage signed staged firmware updates with rollback protection."
+requires-python = ">=3.10"
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
